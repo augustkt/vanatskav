@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8"> <!-- Кодування символів -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Налаштування масштабу на різних пристроях -->
+  <title>Форма</title> <!-- Заголовок вкладених веб-сторінок -->
+</head>
+<body>
+  <h1>Форма</h1> <!-- Заголовок великого розміру -->
+
+  <!-- Форма для введення персональних даних -->
+  <form action="#"> <!-- Відправка даних на ту ж сторінку -->
+    <h2>Персональна інформація</h2>
+
+    <!-- Поля для ім'я та віку -->
+    <fieldset>
+      <legend><p>Персональна інформація</p></legend>
+<label for="name">Ваше ім'я:</label>
+   <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я">
+      <br>
+      <label for="age">Ваш вік:</label>
+      <input type="number" id="age" name="age" placeholder="Введіть ваш вік">
+    </fieldset>
+
+    <br>
+
+    <!-- Поле для введення пароля -->
+    <label for="password">Ваш пароль:</label>
+    <input type="password" id="password" name="password" placeholder="Введіть ваш пароль">
+    <br>
+
+    <br>
+
+    <!-- Радіо-кнопки для вибору статі -->
+    <label for="gender">Стать:</label>
+    <br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Чоловіча</label>
+    <br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Жіноча</label>
+    <br>
+
+    <br>
+
+    <!-- Прапорець для запам'ятовування -->
+    <label for="remember">Запам'ятати мене:</label>
+    <input type="checkbox" id="remember" name="remember">
+    <br>
+
+    <br>
+
+    <!-- Вибір міста зі списку -->
+    <label for="city">Ваше місто:</label>
+    <select id="city" name="city">
+      <option value="">Оберіть місто</option>
+      <option value="kyiv">Київ</option>
+      <option value="lviv">Львів</option>
+      <option value="kharkiv">Харків</option>
+      <option value="odessa">Одеса</option>
+    </select>
+    <br>
+
+    <br>
+
+    <!-- Багаторядкове поле для введення повідомлення -->
+    <label for="message">Ваше повідомлення:</label>
+    <br>
+    <textarea id="message" name="message" rows="5" cols="30"></textarea>
+    <br>
+
+    <br>
+
+    <!-- Кнопка для відправки форми -->
+    <button type="submit">Відправити</button>
+  </form>
+</body>
+</html>
